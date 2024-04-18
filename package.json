@@ -1,0 +1,69 @@
+{
+  "name": "khataa",
+  "displayName": "khataa",
+  "description": "Enhance your coding efficiency with Khataa. This VS Code extension streamlines error management by providing a 'Copy' button alongside code errors for quick clipboard access, saving time and reducing hassle.",
+  "version": "1.0.0",
+  "publisher": "samiru-dev",
+  "icon": "assets/icon.png",
+  "engines": {
+    "vscode": "^1.88.0"
+  },
+  "categories": [
+    "Linters",
+    "Programming Languages",
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:javascript",
+    "onLanguage:typescript",
+    "onLanguage:php",
+    "onLanguage:rust",
+    "onLanguage:css",
+    "onLanguage:scss"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "copyError",
+        "title": "Copy Error Message"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "when": "showCopyDiagnosticButton",
+          "command": "copyError",
+          "group": "navigation"
+        }
+      ]
+    },
+    "languages": [
+      {"id": "javascript", "extensions": [".js"], "aliases": ["JavaScript"]},
+      {"id": "typescript", "extensions": [".ts"], "aliases": ["TypeScript"]},
+      {"id": "php", "extensions": [".php"], "aliases": ["PHP"]},
+      {"id": "rust", "extensions": [".rs"], "aliases": ["Rust"]},
+      {"id": "css", "extensions": [".css"], "aliases": ["CSS"]},
+      {"id": "scss", "extensions": [".scss"], "aliases": ["SCSS"]}
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.88.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@typescript-eslint/eslint-plugin": "^7.4.0",
+    "@typescript-eslint/parser": "^7.4.0",
+    "eslint": "^8.57.0",
+    "typescript": "^5.3.3",
+    "@vscode/test-cli": "^0.0.8",
+    "@vscode/test-electron": "^2.3.9"
+  }
+}
