@@ -2,7 +2,7 @@
   "name": "khataa",
   "displayName": "khataa",
   "description": "Enhance your coding efficiency with Khataa. This VS Code extension streamlines error management by providing a 'Copy' button alongside code errors for quick clipboard access, saving time and reducing hassle.",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "publisher": "samiru-dev",
   "icon": "assets/icon.png",
   "repository": {

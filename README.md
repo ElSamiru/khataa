@@ -33,26 +33,36 @@ Khataa contributes the following settings:
 - `khataa.enable`: Enable/disable Khataa (enabled by default).
 - `khataa.copyButtonPosition`: Configure the position of the copy button on the hover tooltip.
 
+## How to Use
+
+Here's how you can use Khataa to copy error messages efficiently:
+
+![How to use Khataa](assets/khataa-explain.gif)
+
 ## Release Notes
 
 ### 1.0.0
 
-- Initial release of Khataa
+- Initial release of Khataa.
 - Features include error message copying with a single hover action.
+
+### 1.0.2
+
+- Minor bug fixes and performance improvements.
 
 ### 1.1.0
 
-- Minor bug fixes and performance improvements.
+- New Icon
+- Updated documentation to include instructions
 
 ---
 
 ## Contributing
 
-We welcome contributions to Khataa! If you have suggestions or issues, please feel free to open an issue or submit a pull request on our [GitHub repository](https://github.com/yourgithub/khataa).
+We welcome contributions to Khataa! If you have suggestions or issues, please feel free to open an issue or submit a pull request on our [GitHub repository](https://github.com/ElSamiru/khataa).
 
 ## License
 
 Khataa is released under the MIT License. See the [LICENSE](LICENSE.md) file for more details.
 
 **Enjoy coding more efficiently with Khataa!**
-# khataa
