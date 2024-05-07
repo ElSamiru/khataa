@@ -1,4 +1,12 @@
-# Khataa - Visual Studio Code Extension
+<div align="center">
+  <img src="assets/icon.png" width="80px" alt="Khataa Logo">
+</div>
+
+<br>
+
+<h1 align="center">
+  <strong>Khataa</strong>
+</h1>
 
 ## Introduction
 
@@ -37,7 +45,12 @@ Khataa contributes the following settings:
 
 Here's how you can use Khataa to copy error messages efficiently:
 
-![How to use Khataa](assets/khataa-explain.gif)
+<div align="center">
+  <video width="560" height="380" controls>
+    <source src="assets/khataa-explain.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
 
 ## Release Notes
 
@@ -54,6 +67,10 @@ Here's how you can use Khataa to copy error messages efficiently:
 
 - New Icon
 - Updated documentation to include instructions
+
+### 1.1.1
+
+- Updated documentation
 
 ---
 
